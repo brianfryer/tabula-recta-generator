@@ -3,17 +3,29 @@
 
     <title>Tabula Recta Generator</title>
 
-    <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Capriola' rel='stylesheet' type='text/css'>
 
     <style type="text/css">
         body{
-            font-family: 'Lato', sans-serif;
+            font-family: 'Capriola', sans-serif;
+            font-size: medium;
+            line-height: 1;
         }
         table {
             border: 1px solid black;
+            text-align: center;
         }
         td {
-            border: 1px solid black;
+            width: 26px;
+            height: 26px;
+            border: 1px dotted black;
+        }
+        .black,
+        tr > td:first-child {
+            color: white;
+            font-weight: bold;
+            text-transform: uppercase;
+            background-color: black;
         }
     </style>
 
@@ -23,7 +35,7 @@
     <table>
       <tbody>
         <tr>
-          <td style="border: 1px solid black">&nbsp;</td>
+          <td><strong>&#9786;</strong></td>
           <?php
             function rand_char($chars = 'abcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()+_-{}|;<>?ABCDEFGHIJKLMNOPQRSTUVWXYZ') {
               $string = '';
@@ -36,7 +48,7 @@
             $letterarray = array('a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't' ,'u', 'v', 'w', 'x', 'y', 'z');
             $count = count($letterarray);
             for ($i = 0; $i < $count; $i++) {
-              echo "<td>".$letterarray[$i]."</td>";
+              echo "<td class='black'>".$letterarray[$i]."</td>";
             }
             echo "</tr>";
             for ($i = 0; $i < $count; $i++) {
