@@ -10,13 +10,13 @@ Example 1:
 
 Let's say you are creating a new account for Whoosh Traffic. Again, your password would begin at the intersection of column H and row O (the second and third letters of Whoosh Traffic).
 
-From here, read off 12 characters diagonally. (See the green highlights below).
+From here, read off 12 characters diagonally. (See the green highlights at the link above).
 
 Example 2:
 
 Or, perhaps you need to update your password for your Twitter account. In this case, your password would begin at the intersection of column W and row I (the second and third letters of Twitter).
 
-From here, read off 12 characters diagonally. (See the yellow highlights below).
+From here, read off 12 characters diagonally. (See the yellow highlights at the link above).
 
 In the two examples above, the algorithm being used to determine where the password starts is:
 
