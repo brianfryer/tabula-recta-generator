@@ -75,7 +75,12 @@
         <tr>
           <td><strong>&#9786;</strong></td>
           <?php
-            function rand_char($chars = 'abcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()+_-{}|;<>?ABCDEFGHIJKLMNOPQRSTUVWXYZ') {
+            if (array_key_exists('chars', $_REQUEST)) {
+              define(default_chars, $_REQUEST['chars']);
+            } else {
+              define(default_chars, 'abcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()+_-{}|;<>?ABCDEFGHIJKLMNOPQRSTUVWXYZ');
+            }
+            function rand_char($chars = default_chars) {
               $string = '';
               for ($i = 0; $i < 1; $i++) {
                 $pos = rand(0, strlen($chars)-1);
